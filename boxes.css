@@ -1,0 +1,157 @@
+body{
+    width: 100%;
+    text-align: center;
+}
+.box {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+}
+.one {
+    background-color:red;
+}
+.two {
+    background-color: limegreen; 
+}
+.three {
+    background-color: dodgerblue;
+}
+.four {
+    background-color: orange;
+}
+.five {
+    background-color: yellow;
+}
+.six {
+    background-color: sandybrown;
+}
+.seven {
+    background-color: palevioletred;
+}
+.eight {
+    background-color: deeppink;
+}
+.nine {
+    background-color: green;
+}
+.ten {
+    background-color: blue;
+}
+
+.slideDown {
+    animation: slideDown 3s;
+}
+.translateRotate {
+    animation: translateRotate 3s;
+}
+.scale {
+    animation: scale 3s;
+}
+.rotate {
+    animation: rotate 3s;
+}
+.Yrotate {
+    animation: Yrotate 3s;
+}
+.rotateX {
+    animation: rotateX 3s;
+}
+.skew {
+    animation: skew 3s;
+}
+.YXrotate {
+    animation: YXrotate 3s;
+}
+.TRrotate {
+    animation: TRrotate 3s;
+}
+.xxy {
+    animation: xxy 3s;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(0);
+        }
+    100% {
+       transform: translateY(500px);
+       }
+}
+@keyframes translateRotate {
+    0% {
+        transform:translateY(10px) rotate(0deg);
+        }
+    100% {
+       transform: translateY(500px) rotate(360deg);
+       }
+}
+@keyframes scale {
+    0% {
+        transform:translateY(10px) scale(0);
+        }
+    100% {
+       transform: translateY(500px) scale(1, 1);
+       }
+}
+@keyframes rotate {
+    0% {
+        transform:translateY(0px) rotateY(180deg);
+        }
+    100% {
+       transform: translateY(500px) rotate(0);
+       }
+}
+@keyframes Yrotate {
+    0% {
+        transform:translateY(0px) rotate(45deg);
+        }
+    100% {
+       transform: translateY(500px) rotate(45deg);
+       }
+}
+@keyframes rotateX {
+    0% {
+        transform:translateY(0px) rotateX(180deg);
+        }
+    100% {
+       transform: translateY(500px) rotate(0);
+       }
+}
+@keyframes skew {
+    0% {
+        transform:translateY(0px) skew(0deg);
+        }
+    100% {
+       transform: translateY(500px) skew(360deg);
+       }
+}
+@keyframes YXrotate {
+    0% {
+        transform:translateY(0px) rotate(45deg) rotateX(180deg);
+        }
+    100% {
+       transform: translateY(500px) rotate(45deg) rotateX(0deg);
+       }
+}
+@keyframes TRrotate {
+    0% {
+        transform:translateY(0px) rotateX(0) rotateY(360deg);
+        }  
+    100% {
+       transform: translateY(500px) rotateX(360deg) rotateY(0);
+       }
+}
+@keyframes xxy {
+    0% {
+        transform:translateY(0px) rotate(45deg);
+        }
+        50% {
+            transform: translateY(250px) rotate(45deg) rotateY(360deg);
+}
+    100% {
+       transform: translateY(500px) rotate(45deg) rotateY(0deg);
+       }
+}
